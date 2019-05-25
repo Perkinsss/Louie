@@ -1,0 +1,41 @@
+	#include <iostream>
+	#include <conio.h>
+	
+	
+	using namespace std;
+	
+	
+	const int Province=3;
+	const int Week = 7;
+	
+	int main()
+	{
+	    int temp[Province] [Week];
+	
+	    cout << "Enter the temperature of Province A, B and C " ;
+	
+	    for (int i = 0; i < Province; ++i)
+	    {
+	        
+			for(int j = 0; j < Week; ++j)
+	        {
+	            
+				cout << "Province " << i + 1 << ", Day " << j + 1 << " : ";
+	            cin >> temp[i][j];
+	        }
+	    }
+	
+	    cout << "Values";
+	    
+	    for (int i = 0; i < Province; ++i)
+	    {
+	        
+			for(int j = 0; j < Week; ++j)
+	        {
+	            
+				cout << "Province " << i + 1 << ", Day " << j + 1 << " = " << temp[i][j] << endl;
+	        }
+	    }
+	
+	    return 0;
+	}
