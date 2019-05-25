@@ -1,0 +1,32 @@
+#include <iostream>
+	#include <conio.h>
+	
+	using namespace std;
+	
+	int main ()
+	{
+	    int arr[10], s, e, lar, sma;
+	    cout << "Enter Array Size : ";
+	    cin >> s;
+	    
+    	cout << "Enter Array Elements : ";
+	    for (e = 0; e < s; e++)
+	    cin >> arr[e];
+	    
+    	lar = arr[0];
+	    for (e = 0; e < s; e++)
+	    {
+	        if (lar < arr[e])
+	            lar = arr[e];
+	    }
+	    sma = arr[0];
+	    for (e = 0; e < s; e++)
+	    {
+	        if (sma > arr[e])
+	            sma = arr[e];
+	    }
+	    
+	cout << "Smallest integer: " << sma;
+	cout << "Largest integer: " << lar;
+	    return 0;
+	}
